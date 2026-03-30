@@ -1,0 +1,31 @@
+
+{
+  "results": [
+    {
+      "id": "1",
+      "type": "cpu_usage",
+      "status": "ok",
+      "data": {
+        "cpu_percent": 4.1
+      }
+    },
+    {
+      "id": "2",
+      "type": "memory_usage",
+      "status": "ok",
+      "data": {
+        "used_mb": 12805,
+        "total_mb": 23883
+      }
+    },
+    {
+      "id": "3",
+      "type": "disk_usage",
+      "status": "ok",
+      "data": {
+        "used_gb": 304,
+        "total_gb": 447
+      }
+    }
+  ]
+}

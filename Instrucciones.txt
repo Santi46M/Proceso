@@ -1,0 +1,11 @@
+1. armar el repositorio
+2. crear la carpeta worker y allí hacer los archivos Python (main y worker), crear el requirements.txt donde ir poniendo las librerías externas (el Docker luego facilita esto)
+3. crear el controlador api .NET 
+4. cambiar el task a JSON
+5. threads
+
+
+
+1. dotnet run en api
+2. Invoke-RestMethod -Method GET http://localhost:5180/tasks/all | ConvertTo-Json -Depth 10 (para chequear)
+3. desde dashboard ejecutar: npm install -> npm run dev

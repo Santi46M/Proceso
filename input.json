@@ -1,0 +1,7 @@
+{
+  "tasks": [
+    { "id": "1", "type": "cpu_usage" },
+    { "id": "2", "type": "memory_usage" },
+    { "id": "3", "type": "disk_usage" }
+  ]
+}
