@@ -69,27 +69,23 @@ El worker es invocado automáticamente por el backend.
 Frontend (React)
 Ir a la carpeta dashboard
 Ejecutar:
-npm install
-npm run dev
-Endpoints principales
-POST /tasks/run
+npm install.
+npm run dev.
+Endpoints principales:
+POST /tasks/run.        
 Ejecuta tareas dinámicas (CPU, memoria, disco)
-GET /metrics/latest
-Devuelve la última métrica registrada
-GET /metrics/history
-Devuelve historial de métricas
+GET /metrics/latest.        
+Devuelve la última métrica registrada.
+GET /metrics/history.       
+Devuelve historial de métricas.
 Notas técnicas
-La comunicación entre .NET y Python se realiza mediante stdin/stdout, enviando y recibiendo JSON.
-El worker utiliza la librería psutil para acceder a métricas del sistema.
-El backend maneja la ejecución del proceso Python y transforma la salida en respuestas HTTP.
-La persistencia se realiza mediante Entity Framework Core y PostgreSQL.
-El sistema está preparado para extenderse con nuevas métricas o tareas.
+La comunicación entre .NET y Python se realiza mediante stdin/stdout, enviando y recibiendo JSON.  
+El worker utiliza la librería psutil para acceder a métricas del sistema.  
+El backend maneja la ejecución del proceso Python y transforma la salida en respuestas HTTP.  
+La persistencia se realiza mediante Entity Framework Core y PostgreSQL.  
 Posibles mejoras
-Ejecución concurrente de múltiples tareas
-Configuración de intervalos de muestreo automático
-Gráficas en tiempo real
-Autenticación de usuarios
-Dockerización completa del sistema
+Agregar medidor de temperatura de componentes, así como velocidad de lectura/escritura del disco. También estado de los mismos.
+Dockerización completa del sistema (intenté pero por la naturaleza del proyecto debia enviar por HTTP desde el Worker a la APi, lo ví innecesario)
 Sistema de alertas (por ejemplo, uso alto de CPU)
 Enfoque
 
